@@ -7,7 +7,7 @@
 }
 
 html {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .masthead {
@@ -15,8 +15,17 @@ html {
 }
 
 .logo {
-  font-family: 'Limelight', cursive;
+  font-family: 'Abril Fatface', cursive;
   color: var(--main-dark-color);
+}
+
+h1, h2, h3, h4 {
+  color: var(--main-dark-color);
+}
+
+.btn {
+  background-color: var(--main-dark-color);
+  border-color: var(--main-dark-color);
 }
 
 nav li a {
@@ -26,6 +35,19 @@ nav li a {
 
 nav li a:hover {
   color: var(--main-dark-color);
+}
+
+button a {
+  color: var(--neutral-light-color);
+}
+
+/* .card {
+  border: var(--neutral-med-color) solid 1pt;
+  border-radius: 1rem;
+} */
+
+.link {
+  color: var(--main-light-color);
 }
 
 .current {

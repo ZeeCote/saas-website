@@ -1,6 +1,38 @@
-
+:root {
+  --main-light-color: #00aeef;
+  --main-dark-color: #0033a1;
+  --neutral-dark-color: #000;
+  --neutral-med-color: #bebdbe;
+  --neutral-light-color: #fff;
+}
 
 html {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.masthead {
+  background-color: var(--neutral-med-color);
+}
+
+.logo {
+  font-family: 'Limelight', cursive;
+  color: var(--main-dark-color);
+}
+
+nav li a {
+  color: var(--neutral-dark-color);
+  text-decoration: none;
+}
+
+nav li a:hover {
+  color: var(--main-dark-color);
+}
+
+.current {
+  color: var(--main-dark-color);
+}
+
+footer {
+  background-color: var(--neutral-dark-color);
+  color: var(--neutral-light-color);
+}

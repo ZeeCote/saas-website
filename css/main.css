@@ -28,6 +28,10 @@ h1, h2, h3, h4 {
   color: var(--main-dark-color);
 }
 
+.blue-text {
+  color: var(--main-light-color);
+}
+
 .btn {
   background-color: var(--neutral-dark-color);
   border-color: var(--neutral-dark-color);

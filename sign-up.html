@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Sign up</title>
+  <title>E-Zee-Pay Sign Up</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/modules.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -18,18 +18,89 @@
   </ul>
 
   <header class="masthead" role="banner">
-    <div class="island-1-2">
-      <h1 class="logo">E-ZEE-PAY</h1>
+    <div class="gutter-1-2">
+      <h1 class="logo not-bold push-0 pad-t-1-2">E-ZEE-PAY</h1>
     </div>
-    <nav id="nav" class="nav text-neutral-light" role="navigation">
-      <ol class="list-group-inline">
-        <li class="island-1-2"><a href="index.html">Home</a></li>
-        <li class="island-1-2"><a href="tour.html">About</a></li>
-        <li class="island-1-2"><a href="pricing.html">Pricing</a></li>
-        <li class="island-1-2"><a class="current" href="sign-up.html">Sign Up</a></li>
+    <nav id="nav" class="nav text-neutral-light center-content" role="navigation">
+      <ol class="list-group-inline milli">
+        <li class="gutter-1-2 push-0"><a href="index.html">Home</a></li>
+        <li class="gutter-1-2 push-0"><a href="tour.html">About</a></li>
+        <li class="gutter-1-2 push-0"><a href="pricing.html">Pricing</a></li>
+        <li class="gutter-1-2 push-0"><a class="current" href="sign-up.html">Sign Up</a></li>
       </ol>
     </nav>
   </header>
+
+  <main id="main" role="main" class="gutter-2 max-length">
+    <div class="contact pad-t unit xs-1 s-1 m-1 l-1 max-length">
+      <h1 class="not-bold">Ready to Get Started?</h1>
+      <p class="mega">We’re looking forward to getting to know you and your business.</p>
+    </div>
+
+    <form class="push" method="POST" action="https://formspree.io.come">
+
+      <div>
+
+        <fieldset>
+          <legend class="not-bold italic pad-b-1-2 giga">Personal details</legend>
+
+          <div class="grid push-0">
+
+            <div class="pad-b unit xs-1 s-1 m-1 l-1-2">
+              <label for="name">Name</label>
+              <input id="name" name="name" required>
+            </div>
+
+            <div class="pad-b unit xs-1 s-1 m-1 l-1-2">
+              <label for="company">Company</label>
+              <input id="company" name="company" required>
+            </div>
+
+            <div class="pad-b unit xs-1 s-1 m-1 l-1-2">
+              <label for="email">Email</label>
+              <input id="email" type="email" name="email" required>
+            </div>
+
+            <div class="pad-b unit xs-1 s-1 m-1 l-1-2">
+              <label for="subject">Package</label>
+              <select id="subject" name="subject">
+                <option>1 Month Free</option>
+                <option>Basic</option>
+                <option>Advanced</option>
+                <option>Premium</option>
+              </select>
+            </div>
+
+          </div>
+
+          <div>
+            <label for="advertisement">How did you hear about us?</label>
+            <textarea id="advertisement" name="advertisement" required></textarea>
+          </div>
+        </fieldset>
+
+      </div>
+
+      <div>
+        <button class="btn center-block" type="submit">Register</button>
+      </div>
+
+      <input type="hidden" name="_subject" value="Request to join the mission">
+
+    </form>
+
+    <section class="thanks push grid" id="thanks">
+      <div class="embed embed-golden push-1-2 unit xs-1 s-1 m-1 l-1">
+        <img src="images/gorup-jump.jpg" alt="Team Jumping for Joy" class="embed-item">
+      </div>
+
+      <div class="push-1-2 unit xs-1 s-1 m-1 l-1 center-content-vertical">
+        <h2 class="push-1-2">Thank you and Welcome</h2>
+        <p class="push-1-2">We want to thank you for Choosign E-Zee-Pay and Welcome you to the team.</p>
+        <p class="push-1-2">A representative will be contacting you within the next 2 business days to help you get everything you need to start selling your quality goods.</p>
+      </div>
+    </section>
+  </main>
 
   <footer id="footer" class="footer pad-t-1-2 pad-b-1-2" role="contentinfo">
     <div class="wrapper gutter-1-2">

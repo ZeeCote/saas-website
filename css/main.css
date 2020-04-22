@@ -4,10 +4,11 @@
   --neutral-dark-color: #000;
   --neutral-med-color: #bebdbe;
   --neutral-light-color: #fff;
+  --contrast-color: #ff5dab;
 }
 
 html {
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto, sans-serif;
 }
 
 .masthead {
@@ -15,8 +16,12 @@ html {
 }
 
 .logo {
-  font-family: 'Abril Fatface', cursive;
+  font-family: "Abril Fatface", cursive;
   color: var(--main-dark-color);
+}
+
+.line-bottom {
+  border-bottom: var(--neutral-med-color) solid 1px;
 }
 
 h1, h2, h3, h4 {
@@ -24,8 +29,13 @@ h1, h2, h3, h4 {
 }
 
 .btn {
-  background-color: var(--main-dark-color);
-  border-color: var(--main-dark-color);
+  background-color: var(--neutral-dark-color);
+  border-color: var(--neutral-dark-color);
+}
+
+.btn:hover {
+  background-color: var(--main-light-color);
+  border-color: var(--main-light-color);
 }
 
 nav li a {
@@ -34,20 +44,11 @@ nav li a {
 }
 
 nav li a:hover {
-  color: var(--main-dark-color);
+  color: var(--main-light-color);
 }
-
-button a {
-  color: var(--neutral-light-color);
-}
-
-/* .card {
-  border: var(--neutral-med-color) solid 1pt;
-  border-radius: 1rem;
-} */
 
 .link {
-  color: var(--main-light-color);
+  color: var(--contrast-color);
 }
 
 .current {
